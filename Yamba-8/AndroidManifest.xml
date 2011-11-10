@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  android:versionCode="1" android:versionName="1.0" package="com.marakana.yamba8">
+  <application android:icon="@drawable/icon" android:label="@string/app_name"
+    android:name=".YambaApplication">
+
+    <activity android:name=".TimelineActivity" android:label="@string/titleTimeline">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name=".PrefsActivity" android:label="@string/titlePrefs" />
+    <activity android:name=".StatusActivity" android:label="@string/titleStatus" />
+
+    <service android:name=".UpdaterService" />
+
+    <receiver android:name=".BootReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+
+    <receiver android:name=".NetworkReceiver">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+    </receiver>
+
+    <provider android:name=".StatusProvider"
+      android:authorities="com.marakana.yamba8.statusprovider" />
+
+    <receiver android:name=".YambaWidget" android:label="@string/msgLastTimelineUpdate">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.marakana.android.yamba5.TIMELINE_UPDATED" />
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider"
+        android:resource="@xml/yamba_widget_info" />
+    </receiver>
+
+  </application>
+  <uses-sdk android:minSdkVersion="8" />
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <uses-permission android:name="com.marakana.yamba.SEND_TIMELINE_NOTIFICATIONS" />
+  <uses-permission android:name="com.marakana.yamba.RECEIVE_TIMELINE_NOTIFICATIONS" />
+
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+  <permission android:name="com.marakana.yamba.SEND_TIMELINE_NOTIFICATIONS"
+    android:label="@string/send_timeline_notifications_permission_label"
+    android:description="@string/send_timeline_notifications_permission_description"
+    android:permissionGroup="android.permission-group.PERSONAL_INFO"
+    android:protectionLevel="normal" />
+
+  <permission android:name="com.marakana.yamba.RECEIVE_TIMELINE_NOTIFICATIONS"
+    android:label="@string/receive_timeline_notifications_permission_label"
+    android:description="@string/receive_timeline_notifications_permission_description"
+    android:permissionGroup="android.permission-group.PERSONAL_INFO"
+    android:protectionLevel="normal" />
+
+</manifest> 

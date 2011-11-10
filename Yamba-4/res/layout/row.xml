@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vertical linear layout <1> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:orientation="vertical"
+  android:layout_width="fill_parent">
+  <!-- Horizontal linear layout <2> -->
+  <LinearLayout android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    <!-- User <3> -->
+    <TextView android:layout_height="wrap_content"
+      android:layout_width="fill_parent" android:layout_weight="1"
+      android:id="@+id/textUser" android:text="Slashdot"
+      android:textStyle="bold"></TextView>
+    <!-- Timestamp <4> -->
+    <TextView android:layout_height="wrap_content"
+      android:layout_width="fill_parent" android:layout_weight="1"
+      android:gravity="right" android:id="@+id/textCreatedAt"
+      android:text="10 minutes ago"></TextView>
+  </LinearLayout>
+  <!-- Status <5> -->
+  <TextView android:layout_height="wrap_content"
+    android:layout_width="fill_parent" android:id="@+id/textText"
+    android:text="Firefox comes to Android"></TextView>
+</LinearLayout>

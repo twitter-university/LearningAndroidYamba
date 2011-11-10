@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Yamba 7</string>
+  <string name="titleYamba">Yamba 7</string>
+
+  <string name="hintText">Please enter your 140-character status</string>
+  <string name="buttonUpdate">Update</string>
+
+  <string name="titleStatus">Status Update</string>
+  <string name="titlePrefs">Prefs</string>
+  <string name="titleTimeline">Timeline</string>
+  <string name="titleServiceStop">Stop Service</string>
+  <string name="titleServiceStart">Start Service</string>
+  <string name="titlePurge">Purge Data</string>
+  <string name="titleUsername">Username</string>
+  <string name="titlePassword">Password</string>
+  <string name="titleApiRoot">API Root</string>
+
+  <string name="summaryUsername">Please enter your username</string>
+  <string name="summaryPassword">Please enter your password</string>
+  <string name="summaryApiRoot">URL of Root API for your service</string>
+
+  <string name="msgStatusUpdatedSuccessfully">Status Updated Successfully</string>
+  <string name="msgStatusUpdateFailed">Status Update Failed</string>
+  <string name="msgPleaseWaitWhilePosting">Please wait while posting...</string>
+  <string name="msgAllDataPurged">All data has been purged</string>
+  <string name="msgSetupPrefs">Please enter your username, password and server to
+    use</string>
+  <string name="msgLastTimelineUpdate">Yamba Widget</string>
+
+
+  <string name="send_timeline_notifications_permission_label">Sends Timeline Notifications</string>
+  <string name="send_timeline_notifications_permission_description">Allow this application to send timeline
+    notifications to other applications</string>
+  <string name="receive_timeline_notifications_permission_label">Receive Timeline Notifications</string>
+  <string name="receive_timeline_notifications_permission_description">Allow this application to receive timeline
+    notifications from other applications</string>
+
+  <string name="sql1">CREATE TABLE timeline ( _id integer primary
+    key,created_at integer, source text, txt text, user text );</string>
+
+</resources>

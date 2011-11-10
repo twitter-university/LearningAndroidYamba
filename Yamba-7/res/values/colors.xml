@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_text_color">@android:color/white</color>
+    <color name="edit_text_background">#6009</color>
+    <color name="edit_text_foreground">@color/title_text_color</color>
+    <color name="edit_text_hint">#ccc</color>
+</resources>

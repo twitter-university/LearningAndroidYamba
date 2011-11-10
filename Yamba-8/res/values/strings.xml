@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="summaryUpdaterInterval">How often should Updater service run?</string>
+  <string name="titleUpdaterInterval">Updater Interval</string>
+  <string name="summaryStartAtBoot">Should Updater service automatically start at boot
+    time?</string>
+  <string name="titleStartAtBoot">Start Updater at Boot?</string>
+  <string name="titleRefresh">Refresh</string>
+  <string name="summaryProvider">Provide your location?</string>
+  <string name="titleProvider">Location Provider</string>
+  <string name="app_name">Yamba 8</string>
+  <string name="titleYamba">Yamba 8</string>
+
+  <string name="hintText">Please enter your 140-character status</string>
+  <string name="buttonUpdate">Update</string>
+
+  <string name="titleStatus">Status Update</string>
+  <string name="titlePrefs">Prefs</string>
+  <string name="titleTimeline">Timeline</string>
+  <string name="titleServiceStop">Stop Service</string>
+  <string name="titleServiceStart">Start Service</string>
+  <string name="titlePurge">Purge Data</string>
+  <string name="titleUsername">Username</string>
+  <string name="titlePassword">Password</string>
+  <string name="titleApiRoot">API Root</string>
+
+  <string name="summaryUsername">Please enter your username</string>
+  <string name="summaryPassword">Please enter your password</string>
+  <string name="summaryApiRoot">URL of Root API for your service</string>
+
+  <string name="msgStatusUpdatedSuccessfully">Status Updated Successfully</string>
+  <string name="msgStatusUpdateFailed">Status Update Failed</string>
+  <string name="msgPleaseWaitWhilePosting">Please wait while posting...</string>
+  <string name="msgAllDataPurged">All data has been purged</string>
+  <string name="msgSetupPrefs">Please enter your username, password and server to
+    use</string>
+  <string name="msgLastTimelineUpdate">Yamba Widget</string>
+  <string name="msgNotificationTitle">New Yamba Status Updates</string>
+  <string name="msgNotificationMessage">You\'ve got %d new status update(s)</string>
+
+  <string name="send_timeline_notifications_permission_label">Sends Timeline Notifications</string>
+  <string name="send_timeline_notifications_permission_description">Allow this application to send timeline
+    notifications to other applications</string>
+  <string name="receive_timeline_notifications_permission_label">Receive Timeline Notifications</string>
+  <string name="receive_timeline_notifications_permission_description">Allow this application to receive timeline
+    notifications from other applications</string>
+
+  <string name="sql1">CREATE TABLE timeline ( _id integer primary
+    key,created_at integer, source text, txt text, user text );</string>
+
+  <string-array name="providers">
+    <item>None, please</item>
+    <item>GPS via satellites!</item>
+    <item>Mobile Network will do</item>
+  </string-array>
+
+  <string-array name="providerValues">
+    <item>NONE</item>
+    <item>gps</item>
+    <item>network</item>
+  </string-array>
+
+  <string-array name="interval">
+    <item>Never</item>
+    <item>Fifteen minutes</item>
+    <item>Half hour</item>
+    <item>An hour</item>
+    <item>Half day</item>
+    <item>Day</item>
+  </string-array>
+
+  <string-array name="intervalValues">
+    <item>0</item>
+    <item>900000</item>
+    <item>1800000</item>
+    <item>3600000</item>
+    <item>43200000</item>
+    <item>86400000</item>
+  </string-array>
+</resources>

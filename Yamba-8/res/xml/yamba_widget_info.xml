@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+  android:initialLayout="@layout/yamba_widget" android:minWidth="294dp"
+  android:minHeight="72dp" android:label="@string/msgLastTimelineUpdate"
+  android:updatePeriodMillis="1800000" />

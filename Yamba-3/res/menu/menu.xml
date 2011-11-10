@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/itemPrefs" android:title="@string/titlePrefs"
+    android:icon="@android:drawable/ic_menu_preferences"></item>  <!-- <1> -->
+  <item android:title="@string/titleServiceStart" android:id="@+id/itemServiceStart"
+    android:icon="@android:drawable/ic_media_play"></item>  <!-- <2> -->
+  <item android:title="@string/titleServiceStop" android:id="@+id/itemServiceStop"
+    android:icon="@android:drawable/ic_media_pause"></item> <!-- <3> -->
+</menu>
